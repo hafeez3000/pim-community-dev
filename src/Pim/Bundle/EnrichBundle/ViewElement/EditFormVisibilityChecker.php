@@ -12,7 +12,7 @@ use Symfony\Component\PropertyAccess\PropertyAccess;
  * @copyright 2014 Akeneo SAS (http://www.akeneo.com)
  * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
-class EditFormVisibilityChecker implements ViewElementVisibilityCheckerInterface
+class EditFormVisibilityChecker implements VisibilityCheckerInterface
 {
     /** @staticvar string */
     const PATH = '[form].vars[value].id';

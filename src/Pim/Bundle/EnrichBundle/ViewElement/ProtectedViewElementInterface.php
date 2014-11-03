@@ -32,16 +32,16 @@ interface ProtectedViewElementInterface extends ViewElementInterface
     /**
      * Add a new visibility checker to the view element
      *
-     * @param ViewElementVisibilityCheckerInterface $checker
+     * @param VisibilityCheckerInterface $checker
      *
      * @return ProtectedViewElementInterface
      */
-    public function addVisibilityChecker(ViewElementVisibilityCheckerInterface $checker);
+    public function addVisibilityChecker(VisibilityCheckerInterface $checker);
 
     /**
      * Set the visibility checkers to the view element
      *
-     * @param ViewElementVisibilityCheckerInterface[] $checkers
+     * @param VisibilityCheckerInterface[] $checkers
      *
      * @return ProtectedViewElementInterface
      */

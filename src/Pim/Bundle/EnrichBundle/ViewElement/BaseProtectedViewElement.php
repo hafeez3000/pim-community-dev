@@ -19,7 +19,7 @@ class BaseProtectedViewElement extends BaseViewElement implements ProtectedViewE
     /** @var array */
     protected $aclResources;
 
-    /** @var ViewElementVisibilityCheckerInterface[] */
+    /** @var VisibilityCheckerInterface[] */
     protected $visibilityCheckers = [];
 
     /**
@@ -73,7 +73,7 @@ class BaseProtectedViewElement extends BaseViewElement implements ProtectedViewE
     /**
      * {@inheritdoc}
      */
-    public function addVisibilityChecker(ViewElementVisibilityCheckerInterface $checker)
+    public function addVisibilityChecker(VisibilityCheckerInterface $checker)
     {
         $this->visibilityCheckers[] = $checker;
 
