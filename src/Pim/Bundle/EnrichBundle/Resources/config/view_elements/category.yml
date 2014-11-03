@@ -1,6 +1,6 @@
 parameters:
     pim_enrich.view_element.tab.category_property.template:  'PimEnrichBundle:CategoryTree:Tab/property.html.twig'
-    pim_enrich.view_element.tab.category_history.template:   'PimEnrichBundle:CategoryTree:Tab/history.html.twig'
+    pim_enrich.view_element.tab.category_history.template:   'PimEnrichBundle:Form:Tab/history.html.twig'
 
 services:
     pim_enrich.view_element.tab.category_property:

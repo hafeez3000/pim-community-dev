@@ -1,7 +1,7 @@
 parameters:
     pim_enrich.view_element.tab.attributegroup_property.template:  'PimEnrichBundle:AttributeGroup:Tab/property.html.twig'
     pim_enrich.view_element.tab.attributegroup_attribute.template: 'PimEnrichBundle:AttributeGroup:Tab/attribute.html.twig'
-    pim_enrich.view_element.tab.attributegroup_history.template:   'PimEnrichBundle:AttributeGroup:Tab/history.html.twig'
+    pim_enrich.view_element.tab.attributegroup_history.template:   'PimEnrichBundle:Form:Tab/history.html.twig'
 
 services:
     pim_enrich.view_element.tab.attributegroup_property:

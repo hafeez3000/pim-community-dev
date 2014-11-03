@@ -1,6 +1,6 @@
 parameters:
     pim_enrich.view_element.tab.associationtype_property.template: 'PimEnrichBundle:AssociationType:Tab/property.html.twig'
-    pim_enrich.view_element.tab.associationtype_history.template:  'PimEnrichBundle:AssociationType:Tab/history.html.twig'
+    pim_enrich.view_element.tab.associationtype_history.template:  'PimEnrichBundle:Form:Tab/history.html.twig'
 
 services:
     pim_enrich.view_element.tab.associationtype_property:

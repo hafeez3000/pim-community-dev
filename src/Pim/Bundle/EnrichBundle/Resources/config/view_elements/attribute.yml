@@ -1,7 +1,7 @@
 parameters:
     pim_enrich.view_element.tab.attribute_parameter.template: 'PimEnrichBundle:Attribute:Tab/parameter.html.twig'
     pim_enrich.view_element.tab.attribute_value.template:     'PimEnrichBundle:Attribute:Tab/value.html.twig'
-    pim_enrich.view_element.tab.attribute_history.template:   'PimEnrichBundle:Attribute:Tab/history.html.twig'
+    pim_enrich.view_element.tab.attribute_history.template:   'PimEnrichBundle:Form:Tab/history.html.twig'
 
 services:
     pim_enrich.view_element.tab.attribute_parameter:
