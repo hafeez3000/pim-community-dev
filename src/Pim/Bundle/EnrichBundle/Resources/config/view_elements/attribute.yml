@@ -25,6 +25,7 @@ services:
         arguments:
             - 'tab.pim_enrich_attribute_edit.history'
             - %pim_enrich.view_element.tab.attribute_history.template%
+            - ['pim_enrich_attribute_history']
         calls:
             - [ addVisibilityChecker, ['@pim_enrich.view_element.visibility_checker.edit_form'] ]
         tags:

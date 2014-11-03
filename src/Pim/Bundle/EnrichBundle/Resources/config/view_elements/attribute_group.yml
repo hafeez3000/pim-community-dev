@@ -22,11 +22,12 @@ services:
         tags:
             - { name: pim_enrich.view_element, type: pim_enrich_attribute_group_form.form_tab, position: 100 }
 
-    pim_enrich.view_element.tab.attributegroup_history_base:
+    pim_enrich.view_element.tab.attributegroup_history:
         parent: pim_enrich.view_element.base_protected
         arguments:
             - 'tab.pim_enrich_attributegroup_edit.history'
             - %pim_enrich.view_element.tab.attributegroup_history.template%
+            - ['pim_enrich_attribute_group_history']
         calls:
             - [ addVisibilityChecker, ['@pim_enrich.view_element.visibility_checker.edit_form'] ]
         tags:

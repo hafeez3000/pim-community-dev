@@ -42,9 +42,10 @@ services:
             - { name: pim_enrich.view_element, type: pim_product_edit.form_tab, position: 120 }
 
     pim_enrich.view_element.tab.product_history:
-        parent: pim_enrich.view_element.base
+        parent: pim_enrich.view_element.base_protected
         arguments:
             - 'tab.pim_enrich_product_edit.history'
             - %pim_enrich.view_element.tab.product_history.template%
+            - ['pim_enrich_product_history']
         tags:
             - { name: pim_enrich.view_element, type: pim_product_edit.form_tab, position: 130 }

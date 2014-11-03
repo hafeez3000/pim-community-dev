@@ -12,9 +12,12 @@ services:
             - { name: pim_enrich.view_element, type: pim_enrich_channel_form.form_tab, position: 90 }
 
     pim_enrich.view_element.tab.channel_history:
-        parent: pim_enrich.view_element.base
+        parent: pim_enrich.view_element.base_protected
         arguments:
             - 'tab.pim_enrich_channel_edit.history'
             - %pim_enrich.view_element.tab.channel_history.template%
+            - ['pim_enrich_channel_history']
+        calls:
+            - [ addVisibilityChecker, ['@pim_enrich.view_element.visibility_checker.edit_form'] ]
         tags:
             - { name: pim_enrich.view_element, type: pim_enrich_channel_form.form_tab, position: 110 }
